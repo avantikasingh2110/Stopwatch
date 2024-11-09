@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main_div {
+    width: 660px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 15px;
+    background-image: url(./images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 4px 4px 2px rgba(40, 32, 149, 0.5);
+    
+}
+
+h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin: 8px;
+    font-family: cursive;
+    color: rgb(246, 74, 103);
+}
+
+#stopwatch_div {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 15px;
+    font-size: 5.5rem;
+    color: rgb(158, 157, 156);
+}
+
+button {
+    padding: 10px 45px;
+    font-size: 2.5rem;
+    margin: 15px;
+    border-radius: 40px;
+    background-color: rgb(22, 21, 21);
+    color: rgb(255, 46, 81);
+    box-shadow: 4px 4px 2px rgba(40, 32, 149, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #83d887;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        background-image: url(./images/back.jpg);
+    }
+
+    #main_div {
+        width: 450px;
+        background-image: url(./images/back.jpg);
+    }
+
+    h1 {
+        font-size: 3rem;
+        color: crimson;
+    }
+
+    #stopwatch_div {
+        font-size: 4rem;
+        color: white;
+    }
+
+    button {
+        font-size: 1rem;
+        margin: 5px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        background-image: url(./images/back.jpg);
+    }
+    #main_div {
+        width: 265px;
+        background-image: url(./images/back.jpg);
+    }
+
+    h1 {
+        font-size: 2rem;
+        color: crimson;
+    }
+
+    #stopwatch_div {
+        font-size: 2.75rem;
+        color: white;
+    }
+
+    button {
+        font-size: 0.60rem;
+        padding: 8px 22px;
+        margin: 5px;
+    }
+}
